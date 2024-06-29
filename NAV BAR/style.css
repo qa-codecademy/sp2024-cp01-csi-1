@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+    size: 14px;
+    line-height: 20px;
+}
+
+a:hover {
+    color: #c7f284;
+}
+
+.nav_ui {
+    max-width: 100vw;
+    height: 64px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 0 24px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #121d28;
+}
+
+.nav_bar {
+    display: grid;
+    grid-template-columns: repeat(4, 0.7fr);
+    font-size: small;
+    column-gap: 10px;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#register_btn {
+    background-color: #192531;
+    color: #c7f284;
+}
+
+#register_btn:hover{
+    background-color: #192531a7;
+}
+
+#login_btn {
+    background-color: #31363d;
+    color: #ecfeff;
+}
+
+#login_btn:hover{
+    background-color: #31363dba;
+}
+
+a {
+    text-decoration: none;
+    color: #ecfeff;
+}
+
+.search-input:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+.search-input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    width: 300px;
+    transition: all 0.3s ease;
+}
