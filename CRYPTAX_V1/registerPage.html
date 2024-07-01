@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="decorateRegister.css">
+    <title>Cryptax | Register</title>
+</head>
+
+<body>
+    
+    <div id="registerSection">
+        <form action="" method="post">
+            <h2>Register</h2>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                <div id="errorMessageFirstName"></div>
+            </div>
+            <div>
+                <label for="LastName">Last Name</label>
+                <input type="text" name="LastName" id="lastName" placeholder="Last Name">
+                <div id="errorMessageLastName"></div>
+            </div>
+            <div>
+                <label for="Email">E-Mail</label>
+                <input type="email" name="Email" id="emailInput" placeholder="E-Mail">
+                <div id="errorMessageEmail"></div>
+            </div>
+            <!-- Tuka mozebi moze da se stavi date of birth isto i vo js kako property ali toa ke go mislime pokasno -->
+            <div>
+                <label for="usernameRegister">Username</label>
+                <input type="text" name="usernameRegister" id="usernameInputRegister" placeholder="Username">
+                <div id="errorMessageUsername"></div>
+            </div>
+            <div>
+                <label for="passwordRegister">Password</label>
+                <input type="password" name="passwordRegister" id="passwordInputRegister" placeholder="Password">
+                <div id="errorMessagePassword"></div>
+            </div>
+            <button id="registerButton" type="button">Register</button>
+            <br><br>
+            <a href="homepage.html">BACK TO HOME</a>
+
+        </form>
+    </div>
+
+    <script src="userDb.js" type="module"></script>
+    <script src="register.js" type="module"></script>
+    <script src="validations.js" type="module"></script>
+</body>
+
+</html>

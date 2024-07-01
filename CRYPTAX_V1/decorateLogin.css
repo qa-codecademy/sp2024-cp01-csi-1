@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Inter Thin";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: "Inter Thin";
+}
+
+.popupLogin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25rem;
+    transform: translate(-50%, -50%) scale(1.25);
+    background: #1C2936;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+}
+
+.popupLogin .active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.25);
+    transition: top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+}
+
+.popupLogin .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popupLogin .form h2 {
+    text-align: center;
+    color: white;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+
+.popupLogin .form .formElement {
+    margin: 15px 0px;
+}
+
+.popupLogin .form .formElement label {
+    font-size: 14px;
+    color: white;
+    margin-left: 10%;
+}
+
+.popupLogin .form .formElement input[type="text"],
+.popupLogin .form .formElement input[type="password"] {
+    margin-top: 5px;
+    margin-left: 10%;
+    display: block;
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.popupLogin .form .formElement button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: #1C2936;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popupLogin .form .formElement a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: rgba(22, 38, 180, 0.582);
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 5%;
+}
+
+.popupLogin .form .formElement a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}

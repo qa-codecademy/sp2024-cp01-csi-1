@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Inter Thin";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #10171d;
+    font-family: "Inter Thin";
+}
+
+#registerSection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35rem;
+    transform: translate(-50%, -50%) scale(1.25);
+    background: #1C2936;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+}
+
+#registerSection h2 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#registerSection form {
+    text-align: left;
+    color: white;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+
+#registerSection label {
+    font-size: 15px;
+    margin-left: 10%;
+}
+
+#registerSection input[type="text"],
+#registerSection input[type="password"],
+#registerSection input[type="email"] {
+    margin-top: 5px;
+    margin-left: 10%;
+    display: block;
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+#registerButton {
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+    background-color: #1C2936;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+#registerButton:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}

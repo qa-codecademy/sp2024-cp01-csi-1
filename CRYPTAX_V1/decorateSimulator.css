@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #181A20;
+    color: #3498db;
+
+}
+
+.navbar-brand,
+.nav-link {
+    color: #3498db !important;
+
+}
+
+.flex-container {
+    border-top: 1px solid rgb(79, 76, 76);
+    display: flex;
+    flex-direction: row;
+    flex-basis: 0;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    align-items: baseline;
+}
+
+.flex-item {
+    flex-grow: 1;
+    margin: 5vh 5vw 0 5vw;
+}
+
+#buyOrSellCryptoHeader {
+    font-size: 50px;
+    color: #3498db;
+    margin-bottom: 30px;
+}
+
+#topFive {
+    border: 1px solid rgb(73, 71, 71);
+    border-radius: 10px;
+    width: 35vw;
+    height: 40vh;
+
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.crypto-header {
+    border-radius: 10px;
+    letter-spacing: 2px;
+}
+
+body .margin-zero {
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.crypto-item {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 14px;
+    margin: 0;
+    /* padding-left: 12px; */
+    box-sizing: border-box;
+    letter-spacing: 2px;
+
+
+}
+
+.crypto-negativeChange {
+    color: red;
+}
+
+.crypto-positiveChange {
+    color: green;
+}
+
+.right-container {
+    border: 1px solid rgb(73, 71, 71);
+    border-radius: 10px;
+    width: 25vw;
+    height: 80vh;
+
+}
+
+#cryptoBalance {
+    border: 1px solid rgb(73, 71, 71);
+    border-radius: 10px;
+    width: 31vw;
+    margin-top: 20px;
+    height: 7vh;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+
+}
+
+#cryptoBalance:hover {
+    background-color: #092f48;
+
+}
+
+body .modal-header, .modal-title {
+    background-color: #041d2e;
+}
+
+#userCryptoBalance {
+    min-width: 400px;
+    min-height: 150px;
+    background-color: #181A20
+}
+
+body .modal-footer {
+    background-color: #041d2e;
+}
+
+#btnHolder {
+    display: flex;
+    height: 10vh;
+    margin: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#buyBtn,
+#sellBtn {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+#buyBtn:hover,
+#sellBtn:hover {
+    background-color: #103e5d;
+    border-radius: 10px;
+}
+
+#spend,
+#receive {
+    margin: 20px 20px 10px 20px;
+    width: 32, 2vw;
+    height: 15vh;
+    border: 1px solid rgb(73, 71, 71);
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+#spend:hover,
+#receive:hover {
+    border-color: #103e5d;
+}
+
+#spentAmount,
+#receivedAmount {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+.coinSelect-sign,
+.cash-currency {
+
+    text-align: right;
+}
+
+.coinSelect-sign select,
+.cash-currency select {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#buyOrSellCryptoDiv {
+    background-color: #103e5d;
+    margin: 140px 20px 10px 20px;
+    width: 32,2vw;
+    height: 10vh;
+    font-size: 20px;
+    border: 1px solid rgb(73, 71, 71);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#buyOrSellCryptoBtn{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#buyOrSellCryptoBtn:hover {
+    background-color: #041d2e;
+}
+
+#accountBalance, #cryptoBalanceInDollars {
+    border: 1px solid rgb(73, 71, 71);
+    border-radius: 10px;
+    margin-right: 15px;
+    width: 15vw;
+    margin-top: 40px;
+    height: 12vh;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    box-sizing: border-box;
+
+}
+
+
+#accountBalance:hover, #cryptoBalanceInDollars:hover {
+    border-color: #103e5d;
+
+}
+
+#accountCash, #cryptoAccountCash {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+    text-align: center;
+}
+
+/* <!-- FOOTER - JUST FOR EXAMPLE  --> */
+
+.footer {
+    background-color: #181A20;
+    color: #103e5d;
+    text-align: center;
+    padding: 50px 0; /* Adjust padding as needed */
+    height: 30vh;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+ 
