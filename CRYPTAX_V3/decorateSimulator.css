@@ -2,16 +2,75 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #181A20;
-    color: #3498db;
+    background-color: #1C2936;
+    color: #D28F74;
+    font-family: "Roboto", sans-serif;
 
 }
 
-.navbar-brand,
-.nav-link {
-    color: #3498db !important;
+
+
+.nav-link:hover {
+    color: #d8d2cf;
+}
+
+.nav-ui {
+    /* max-width: 100vw; */
+    margin-top: 0px;
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    /* flex-direction: row; */
+    padding: 0 24px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #121d28;
+    font-family: Inter, sans-serif;
+    size: 14px;
+    line-height: 20px;
+    z-index: 999;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 0.7fr);
+    font-size: small;
+    column-gap: 10px;
+    background-color: #121d28;
 
 }
+
+.nav-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#ourBrand {
+    background-color: #121d28;
+    letter-spacing: 1.5px;
+    font-size: 1.2rem;
+
+}
+
+div a {
+    text-decoration: none;
+    color: #ecfeff;
+}
+.nav-bar div {
+    background-color: #121d28;
+
+}
+
 
 .flex-container {
     border-top: 1px solid rgb(79, 76, 76);
@@ -21,6 +80,7 @@
     width: 90vw;
     margin-left: 5vw;
     margin-right: 5vw;
+    margin-top: 64px;
     align-items: baseline;
 }
 
@@ -31,7 +91,7 @@
 
 #buyOrSellCryptoHeader {
     font-size: 50px;
-    color: #3498db;
+    color: #D28F74;
     margin-bottom: 30px;
 }
 
@@ -84,6 +144,7 @@ body .margin-zero {
     border-radius: 10px;
     width: 25vw;
     height: 80vh;
+    margin-bottom: 7px;
 
 }
 
@@ -96,6 +157,8 @@ body .margin-zero {
     text-align: center;
     padding: 5px;
     font-size: 18px;
+    background-color: #121d28;
+    color: #D28F74;
 
 }
 
@@ -107,15 +170,29 @@ body .margin-zero {
 body .modal-header, .modal-title {
     background-color: #041d2e;
 }
+body .modal-body {
+    background-color: #08263a;
+}
 
 #userCryptoBalance {
     min-width: 400px;
     min-height: 150px;
-    background-color: #181A20
+    background-color: #08263a;
+
+}
+#userCryptoBalance div, #userCryptoBalance div .crypto-amount  {
+    background-color: #08263a;
+
+}
+body .btn-close {
+    background-color: #D28F74;
 }
 
 body .modal-footer {
     background-color: #041d2e;
+}
+.modal-footer button {
+    background-color: #D28F74;
 }
 
 #btnHolder {
@@ -235,20 +312,22 @@ body .modal-footer {
     text-align: center;
 }
 
-/* <!-- FOOTER - JUST FOR EXAMPLE  --> */
 
-.footer {
-    background-color: #181A20;
-    color: #103e5d;
+.footer-section {
+    background-color: #121d28;
     text-align: center;
     padding: 50px 0; /* Adjust padding as needed */
     height: 30vh;
     width: 100%;
   }
   
-  .footer p {
+ .footer-section a, .footer-section p {
     margin: 0;
     font-size: 14px;
+    padding: 10px;
+    background-color: #121d28;
+  
+
   }
   
  
