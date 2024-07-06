@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Inter Thin";
+  src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1C2936;
+  color: white;
+  font-family: "Inter Thin";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3.5rem;
+  margin-bottom: 1.5rem;
+  border: 8px solid #d28f74;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.mainHeading {
+  padding-bottom: 1.4rem;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 5%;
+  color: #d28f74;
+}
+
+.subHeading {
+  font-size: 1.8rem;
+  padding: 2rem;
+  text-align: center;
+  color: #d28f74;
+  font-size: 50px;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+  text-wrap: wrap;
+  padding-top: 1rem;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 5fr);
+  justify-content: center;
+  padding: 1.2rem;
+  font-size: 20px;
+}
+
+.box {
+  padding: 1.5rem;
+  margin: 2rem;
+  width: 25rem;
+}
+
+.h3 {
+  text-align: center;
+  padding: 2.5rem;
+  color: #d28f74;
+  font-size: 25px;
+}
+
+.grid-text {
+  text-align: center;
+}
+
+.anwser {
+  text-align: justify;
+  padding-top: 1rem;
+  padding-right: 10%;
+  padding-left: 10%;
+  font-size: 20px;
+}
+
+.bolder {
+  font-weight: 700;
+}
+
+.input {
+  text-align: justify;
+}

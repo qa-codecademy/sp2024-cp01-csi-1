@@ -1,0 +1,317 @@
+@font-face {
+    font-family: "Inter Thin";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1C2936;
+    color: white;
+    font-family: "Inter Thin";
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.loopType {
+    width: 550;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.loopType h1 {
+    font-size: 80px;
+}
+
+.loopType h6 {
+    color: #D28F74;
+    font-size: 80px;
+}
+
+.auto-type {
+    color: #D28F74;
+}
+
+#carouselExampleFade {
+    height: 100vh;
+    width: 100%;
+}
+
+#carouselPictures {
+    display: flex;
+    height: 45rem;
+    width: 70%;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    border: 8px solid #D28F74;
+}
+
+.carousel-control-next {
+    height: 2rem;
+    width: 2rem;
+    background-color: silver;
+    margin-top: 22rem;
+    margin-right: 10rem;
+}
+
+.carousel-control-prev {
+    height: 2rem;
+    width: 2rem;
+    background-color: silver;
+    margin-top: 22rem;
+    margin-left: 10rem;
+}
+
+#trendingWinnersAndLosers {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    height: 500px;
+    margin-bottom: 15%;
+}
+
+#trendingWinnersAndLosers th {
+    text-transform: uppercase;
+    border-bottom: 4px solid #D28F74;
+}
+
+.trendingWinners {
+    flex: 10%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10%;
+    margin-left: 5%;
+    border-right: transparent;
+    border-left: transparent;
+    border-top: transparent;
+    border-bottom: 4px solid #D28F74;
+}
+
+.trendingWinners td {
+    width: 15ch;
+    font-size: 16px;
+    text-decoration: solid;
+    border-bottom: 4px solid #D28F74;
+}
+
+.buttons {
+    border-radius: 25px 25px;
+    text-align: center;
+    font-size: 28px;
+    padding: 1%;
+    background-color: #D28F74;
+    color: white;
+}
+
+.buttons:hover {
+    background-color: #0f1e2c;
+    cursor: pointer;
+}
+
+.trendingLosers {
+    flex: 10%;
+    padding: 15px;
+    text-align: center;
+    margin-right: 5%;
+    border-right: transparent;
+    border-left: transparent;
+    border-top: transparent;
+    border-bottom: 4px solid #D28F74;
+}
+
+.trendingLosers td {
+    width: 15ch;
+    font-size: 16px;
+    text-decoration: solid;
+    border-bottom: 4px solid #D28F74;
+}
+
+.green-text {
+    color: rgb(50, 129, 50);
+}
+
+.red-text {
+    color: rgb(192, 8, 45);
+}
+
+
+#ourPartners {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.partnerPics {
+    width: 30vh;
+    height: 20vh;
+    justify-content: center;
+    align-content: center;
+    border: 5px solid #D28F74;
+    padding: 3.5%;
+}
+
+#aboutUs {
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.aboutUsContainer {
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background-color: #21242b;
+    border-bottom: 10px solid #18f98f;
+}
+
+#faq {
+    border: 6px solid #D28F74;
+    height: 50rem;
+    overflow: scroll;
+}
+
+#faq::-webkit-scrollbar {
+    display: none;
+}
+
+#faq h2 {
+    color: #D28F74;
+    font-size: 50px;
+}
+
+#meetTheTeam {
+    border: 6px solid #D28F74;
+}
+
+#meetTheTeam h2 {
+    color: #D28F74;
+    font-size: 50px;
+}
+
+.button-right {
+    text-align: right;
+}
+
+
+span.num {
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+span.text {
+    color: #e0e0e0;
+    font-size: 1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+}
+
+.paddedBorder {
+    margin: 5%;
+    text-align: justify;
+    border: ridge;
+    padding: 5%;
+}
+
+.largeFont {
+    font-size: 28px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    #aboutUs {
+        width: 85vw;
+    }
+
+    .aboutUsContainer {
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+    }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    height: 100px;
+    align-content: center;
+    justify-content: space-around;
+    font-size: 25px;
+    position: absolute;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #D28F74;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .container {
+        width: calc(50% - 40px);
+        height: 30vmin;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        gap: 15px;
+    }
+
+    .container {
+        width: 100%;
+        height: 25vmin;
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="decorateStatistics.css">
+    <link rel="stylesheet" href="nav.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav id="nav_ui">
+            <div>
+                <div class="nav_bar">
+                    <div><a href="homepage.html" class="navLinks" >HOME</a></div>
+                    <div><a href="#" class="navLinks" >STATISTICS</a></div>
+                    <div><a href="simulator.html" class="navLinks" >SIMULATOR</a></div>
+                    <div><a href="aboutUs.html" class="navLinks" >ABOUT US</a></div>
+                </div>
+            </div>
+            <div class="nav_login_register_btn">
+                <a href="loginPage.html"><button class="navButtons"  id="login_btn">Log In</button></a>
+                <a href="registerPage.html"><button class="navButtons" id="register_btn">Sign Up</button></a>
+            </div>
+    </header>
+    <main id="statisticsDisplay">
+        <table id="cryptoValuesToBuy" class="table">
+            <thead>
+                <th colspan="5" class="borderBottomOrange headingFontSize">Buy While Low</th>
+            </thead>
+            <tbody id="cryptosToBuy">
+                <tr>
+                    <td class="borderBottomOrangeThin subHeadingFontSize">#</td>
+                    <td class="borderBottomOrangeThin subHeadingFontSize">Name</td>
+                    <td class="borderBottomOrangeThin subHeadingFontSize">Current Price</td>
+                    <td class="borderBottomOrangeThin subHeadingFontSize">Percentage Change (24h)</td>
+                    <td class="borderBottomOrangeThin subHeadingFontSize">Trade Now</td>
+                </tr>
+                <!-- <tr>
+                    <td class="borderBottomOrangeThin dataFontSize">1</td>
+                    <td class="borderBottomOrangeThin dataFontSize">Bitcoin</td>
+                    <td class="borderBottomOrangeThin dataFontSize">68.000 USD</td>
+                    <td class="red-text borderBottomOrangeThin dataFontSize">- 0.0052</td>
+                    <td class="borderBottomOrangeThin dataFontSize"><a href="#">More Details >>></a></td>
+                </tr>
+                <tr>
+                    <td class="borderBottomOrangeThin dataFontSize">2</td>
+                    <td class="borderBottomOrangeThin dataFontSize">Bitcoin</td>
+                    <td class="borderBottomOrangeThin dataFontSize">68.000 USD</td>
+                    <td class="red-text borderBottomOrangeThin dataFontSize">- 0.0052</td>
+                    <td class="borderBottomOrangeThin dataFontSize"><a href="#">More Details >>></a></td>
+                </tr>
+                <tr>
+                    <td class="borderBottomOrangeThin dataFontSize">3</td>
+                    <td class="borderBottomOrangeThin dataFontSize">Bitcoin</td>
+                    <td class="borderBottomOrangeThin dataFontSize">68.000 USD</td>
+                    <td class="red-text borderBottomOrangeThin dataFontSize">- 0.0052</td>
+                    <td class="borderBottomOrangeThin dataFontSize"><a href="#">More Details >>></a></td>
+                </tr>
+                <tr>
+                    <td class="borderBottomOrangeThin dataFontSize">4</td>
+                    <td class="borderBottomOrangeThin dataFontSize">Bitcoin</td>
+                    <td class="borderBottomOrangeThin dataFontSize">68.000 USD</td>
+                    <td class="red-text borderBottomOrangeThin dataFontSize">- 0.0052</td>
+                    <td class="borderBottomOrangeThin dataFontSize"><a href="#">More Details >>></a></td>
+                </tr>
+                <tr>
+                    <td class="borderBottomOrangeThin dataFontSize">5</td>
+                    <td class="borderBottomOrangeThin dataFontSize">Bitcoin</td>
+                    <td class="borderBottomOrangeThin dataFontSize">68.000 USD</td>
+                    <td class="red-text borderBottomOrangeThin dataFontSize">- 0.0052</td>
+                    <td class="borderBottomOrangeThin dataFontSize"><a href="#">More Details >>></a></td>
+                </tr>
+                <tr>
+                    <td class="borderBottomOrangeThin dataFontSize">6</td>
+                    <td class="borderBottomOrangeThin dataFontSize">Bitcoin</td>
+                    <td class="borderBottomOrangeThin dataFontSize">68.000 USD</td>
+                    <td class="red-text borderBottomOrangeThin dataFontSize">- 0.0052</td>
+                    <td class="borderBottomOrangeThin dataFontSize"><a href="#">More Details >>></a></td>
+                </tr>
+                <tr>
+                    <td class="borderBottomOrangeThin dataFontSize">7</td>
+                    <td class="borderBottomOrangeThin dataFontSize">Bitcoin</td>
+                    <td class="borderBottomOrangeThin dataFontSize">68.000 USD</td>
+                    <td class="red-text borderBottomOrangeThin dataFontSize">- 0.0052</td>
+                    <td class="borderBottomOrangeThin dataFontSize"><a href="#">More Details >>></a></td>
+                </tr> -->
+            </tbody>
+        </table>
+        <table id="cryptoValuesToSell" class="table">
+            <thead>
+                <th colspan="5" class="borderBottomOrange headingFontSize">Sell While High</th>
+            </thead>
+            <tbody id="cryptosToSell">
+                <tr>
+                    <td class="borderBottomOrangeThin subHeadingFontSize">#</td>
+                    <td class="borderBottomOrangeThin subHeadingFontSize">Name</td>
+                    <td class="borderBottomOrangeThin subHeadingFontSize">Current Price</td>
+                    <td class="borderBottomOrangeThin subHeadingFontSize">Percentage Change (24h)</td>
+                    <td class="borderBottomOrangeThin subHeadingFontSize">Trade Now</td>
+                </tr>
+                <!-- <tr>
+                    <td class="borderBottomOrangeThin dataFontSize">1</td>
+                    <td class="borderBottomOrangeThin dataFontSize">Bitcoin</td>
+                    <td class="borderBottomOrangeThin dataFontSize">68.000 USD</td>
+                    <td class="green-text borderBottomOrangeThin dataFontSize">+ 0.0052</td>
+                    <td class="borderBottomOrangeThin dataFontSize"><a href="#">More Details >>></a></td>
+                </tr>
+                <tr>
+                    <td class="borderBottomOrangeThin dataFontSize">2</td>
+                    <td class="borderBottomOrangeThin dataFontSize">Bitcoin</td>
+                    <td class="borderBottomOrangeThin dataFontSize">68.000 USD</td>
+                    <td class="green-text borderBottomOrangeThin dataFontSize">+ 0.0052</td>
+                    <td class="borderBottomOrangeThin dataFontSize"><a href="#">More Details >>></a></td>
+                </tr>
+                <tr>
+                    <td class="borderBottomOrangeThin dataFontSize">3</td>
+                    <td class="borderBottomOrangeThin dataFontSize">Bitcoin</td>
+                    <td class="borderBottomOrangeThin dataFontSize">68.000 USD</td>
+                    <td class="borderBottomOrangeThin dataFontSize green-text">+ 0.0052</td>
+                    <td class="borderBottomOrangeThin dataFontSize"><a href="#">More Details >>></a></td>
+                </tr>
+                <tr>
+                    <td class="borderBottomOrangeThin dataFontSize">4</td>
+                    <td class="borderBottomOrangeThin dataFontSize">Bitcoin</td>
+                    <td class="borderBottomOrangeThin dataFontSize">68.000 USD</td>
+                    <td class="borderBottomOrangeThin dataFontSize green-text">+ 0.0052</td>
+                    <td class="borderBottomOrangeThin dataFontSize"><a href="#">More Details >>></a></td>
+                </tr>
+                <tr>
+                    <td class="borderBottomOrangeThin dataFontSize">5</td>
+                    <td class="borderBottomOrangeThin dataFontSize">Bitcoin</td>
+                    <td class="borderBottomOrangeThin dataFontSize">68.000 USD</td>
+                    <td class="borderBottomOrangeThin dataFontSize green-text">+ 0.0052</td>
+                    <td class="borderBottomOrangeThin dataFontSize"><a href="#">More Details >>></a></td>
+                </tr>
+                <tr>
+                    <td class="borderBottomOrangeThin dataFontSize">6</td>
+                    <td class="borderBottomOrangeThin dataFontSize">Bitcoin</td>
+                    <td class="borderBottomOrangeThin dataFontSize">68.000 USD</td>
+                    <td class="borderBottomOrangeThin dataFontSize green-text">+ 0.0052</td>
+                    <td class="borderBottomOrangeThin dataFontSize"><a href="#">More Details >>></a></td>
+                </tr>
+                <tr>
+                    <td class="borderBottomOrangeThin dataFontSize">7</td>
+                    <td class="borderBottomOrangeThin dataFontSize">Bitcoin</td>
+                    <td class="borderBottomOrangeThin dataFontSize">68.000 USD</td>
+                    <td class="borderBottomOrangeThin dataFontSize green-text">+ 0.0052</td>
+                    <td class="borderBottomOrangeThin dataFontSize"><a href="#">More Details >>></a></td>
+                </tr> -->
+            </tbody>
+        </table>
+        <script src="statisticsPage.js" type="module"></script>
+        <script src="userDb.js" type="module"></script>
+    </main>
+</body>
+
+
+</html>
